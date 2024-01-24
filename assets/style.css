@@ -6,6 +6,7 @@
 :root {
     --white-text-color: #FFFFFF; 
     --main-text-dark-color: #24303E;
+    --paragraph-text-color: #808397;
 }
 /* header styling */
 header {
@@ -65,5 +66,69 @@ nav ul li {
 .arrow_down {
     display: block;
     margin: 140px auto;
+    height: 120px;
+}
+
+/* cards section styling */
+.cards_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.content_holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+}
+
+.card_heading {
+    font-family: 'Fraunces', serif;
+    font-size: 43px;
+    color: var(--main-text-dark-color);
+    width: 445px;
+}
+
+.card_content {
+    margin: 30px 0;
+    width: 445px;
+    color: var(--paragraph-text-color);
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+.mobile_egg_img {
+    display: none;
+}
+
+.mobile_coctail_img {
+    display: none;
+}
+
+.learn {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+}
+
+.yellow_underline {
+    border-bottom: 5px solid #FAD54A;
+    border-radius: 5px;
+    display: inline-block;
+    width: 110px;
+}
+
+.red_underline {
+    border-bottom: 5px solid #F07564;
+    border-radius: 5px;
+    display: inline-block;
+    width: 110px;
 }
 
